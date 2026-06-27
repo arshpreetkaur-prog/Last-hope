@@ -615,3 +615,26 @@ div.progressBarFill.discColor { background: #fb923c; }
     transform: translateY(1px);
     filter: brightness(0.95);
 }
+/* ==========================================
+   MOBILE & TOUCH HARMONIZATION FIXES
+   ========================================== */
+.trackerTaskRow, .card {
+    /* Forces mobile devices to recognize this div as an interactive button */
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important; 
+}
+
+/* Ensure the layout wraps beautifully on narrow smartphone screens */
+@media (max-width: 480px) {
+    .page {
+        padding: 16px 12px !important;
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+    #doneButton {
+        padding: 16px 20px !important;
+        font-size: 12px !important;
+    }
+}
