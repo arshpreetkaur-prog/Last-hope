@@ -941,15 +941,19 @@ function openTask(taskName) {
     }
 
     if (btnEl) {
-        if (doneTasks[taskName]) {
-            btnEl.innerText = "⚡ PROTOCOL AUTHORIZED & LOCKED";
-    btnEl.style.background = "linear-gradient(135deg, #065f46 0%, #10b981 100%)";
-    btnEl.style.boxShadow = "0 0 20px rgba(16, 185, 129, 0.4)";
-
-        } else {
-          btnEl.innerHTML = "🔥 EXECUTE COMMITMENT";
-    btnEl.style.background = "linear-gradient(135deg, #dc2626 0%, #991b1b 100%)";
-    btnEl.style.boxShadow = "0 0 20px rgba(220, 38, 38, 0.2)";
+      if (doneTasks[taskName]) {
+    btnEl.innerHTML = "<span>⚡</span> PROTOCOL LOCKED & AUTHORIZED";
+    btnEl.className = "completed-state";
+    // Clear old inline overrides to let clean CSS run the show
+    btnEl.style.background = ""; 
+    btnEl.style.boxShadow = "";
+} else {
+    btnEl.innerHTML = "<span>🔥</span> EXECUTE COMMITMENT";
+    btnEl.className = "uncompleted-state";
+    // Clear old inline overrides to let clean CSS run the show
+    btnEl.style.background = ""; 
+    btnEl.style.boxShadow = "";
+}
         }
     
     showPage("taskPage");
