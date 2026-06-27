@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Discipline OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="homePage" class="page active">
+    <!-- COMMAND HEADER CARD -->
+    <div class="homeHeaderCard">
+        <div class="headerTopMeta">
+            <span id="homeDateString">---</span>
+            <span class="statusTag">Routine Day 1</span>
+        </div>
+        
+        <div class="levelContainer" style="margin-top: 18px;">
+            <div class="levelMetaRow">
+                <span id="levelDisplay">🌟 LIVELLO 1 (Recluta)</span>
+                <span id="xpDisplay" class="xpTextHighlight">0 / 100 XP</span>
+            </div>
+            <div class="progressBarTrack">
+                <div id="xpBarFill" class="progressBarFill xpGradientFill" style="width: 0%;"></div>
+            </div>
+            <div id="disciplineLevelDisplay"></div>
+        </div>
+    </div>
+
+    <!-- CORE VITALS GRID -->
+    <div class="metricsGrid">
+        <div class="metricCard vitalStreak">
+            <span class="metricLabel">🔥 CURRENT STREAK</span>
+            <span id="streakCountDisplay" class="metricValue">0 days</span>
+            <span class="metricSubtext">Don’t break the chain.</span>
+        </div>
+        <div class="metricCard vitalCompletion">
+            <span class="metricLabel">📈 TOTAL COMPLETION</span>
+            <span id="totalPercentDisplay" class="metricValue">0%</span>
+            <span id="totalFractionDisplay" class="metricSubtext">0/0 Tasks</span>
+        </div>
+    </div>
+
+    <!-- MAIN INTERACTIVE BOARD -->
+    <div class="glassPanel">
+        <h3 class="sectionHeaderTitle">📊 PROGRESS BOARD</h3>
+        <div id="progressBarsContainer"></div>
+    </div>
+
+    <div class="glassPanel">
+        <h3 class="sectionHeaderTitle">🚀 TODAY MODE (Essential Tasks)</h3>
+        <div id="trackerOverviewContainer"></div>
+    </div>
+
+    <!-- ACTION FOOTER -->
+    <div class="actionFooter">
+        <button class="startButton" onclick="goToDaily()">Access Daily Routine →</button>
+    </div>
+</div>
+
+<div id="dailyPage" class="page">
+    <div class="topBar">
+        <span class="backBtn" onclick="goHome()">← Home</span>
+        <h2>Daily Routine</h2>
+    </div>
+
+    <div class="category bodyColor">BODY</div>
+    <div class="card" onclick="openTask('Hydrate (first thing)')">Hydrate (first thing)</div>
+    <div class="card" onclick="openTask('Hygiene (brush, wash, face care)')">Hygiene (brush, wash, face care)</div>
+    <div class="card" onclick="openTask('Gym / Training')">Gym / Training</div>
+    <div class="card" onclick="openTask('Mobility (10–15 min)')">10–15 min mobility or stretching</div>
+    <div class="category bodyColor" style="margin-top:5px; font-size:12px; padding:4px;">NUTRITION</div>
+    <div class="card" onclick="openTask('Nutrition protocol')">Hit your nutrition protocol</div>
+    <div class="card" onclick="openTask('Hydration target (2–3L)')">Hit your hydration target (2–3L)</div>
+
+    <div class="category mindColor">MIND</div>
+    <div class="card" onclick="openTask('Deep work (1–2 hours)')">1–2 hours deep work</div>
+    <div class="card" onclick="openTask('Meditation (10 min)')">10 min meditation / breathing</div>
+    <div class="card" onclick="openTask('No social media until 3 tasks done')">No social media until 3 tasks are done</div>
+    <div class="card" onclick="openTask('Review goals (2 minutes)')">Review goals for 2 minutes</div>
+
+    <div class="category skillColor">SKILL & GROWTH</div>
+    <div class="card" onclick="openTask('Skill practice')">Skill practice</div>
+    <div class="card" onclick="openTask('Reading (10–20 min)')">Read (10–20 min minimum)</div>
+
+    <div class="category envColor">ENVIRONMENT</div>
+    <div class="card" onclick="openTask('Room reset (5 minutes)')">5‑minute room reset</div>
+    <div class="card" onclick="openTask('Plan tomorrow (3 minutes)')">Plan tomorrow (3 minutes)</div>
+
+    <div class="category appColor">APPEARANCE</div>
+    <div class="card" onclick="openTask('Appearance Routine')">Face care routine</div>
+    <div class="card" onclick="openTask('Grooming basics')">Grooming basics</div>
+
+    <div class="category discColor">DISCIPLINE</div>
+    <div class="card" onclick="openTask('Cold exposure')">Cold exposure</div>
+    <div class="card" onclick="openTask('No junk dopamine')">No junk dopamine</div>
+    <div class="card" onclick="openTask('Daily tracking')">Daily tracking ✔️ / ❌</div>
+</div>
+
+<div id="taskPage" class="page">
+    <div class="topBar">
+        <span class="backBtn" onclick="goDaily()">← Back</span>
+        <h2 id="taskTitle"></h2>
+    </div>
+
+    <div style="text-align: center;">
+        <img id="taskImage" class="taskImage" src="" alt="Task Image">
+    </div>
+
+    <div id="taskDescription" class="taskDescription"></div>
+
+    <button id="doneButton" class="doneButton" onclick="toggleDone()">Mark as Done</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

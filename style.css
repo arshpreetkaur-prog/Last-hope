@@ -1,0 +1,570 @@
+/* ==========================================
+   RESET & SYSTEM BASE STYLES
+   ========================================== */
+/* ==========================================\
+   RESET & SYSTEM BASE STYLES
+   ========================================== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #09090b; /* Deep premium rich black */
+    color: #f4f4f5;
+    font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page {
+    display: none;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.page.active {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================\
+   NEW BEAUTIFUL HOMEPAGE CARDS
+   ========================================== */
+/* ==========================================
+   PREMIUM CYBERPUNK HOME INTERFACE
+   ========================================== */
+
+/* Glassmorphism Panels */
+.homeHeaderCard {
+    background: linear-gradient(135deg, #121214 0%, #1a1a1e 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 24px !important;
+    padding: 24px !important;
+    margin-bottom: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.glassPanel {
+    background: #121214;
+    border: 1px solid #1c1c1f;
+    border-radius: 24px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Level Typography Updates */
+.levelMetaRow {
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 13px; 
+    font-weight: 700; 
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.xpTextHighlight {
+    color: #facc15;
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.2);
+}
+
+/* Dynamic XP Bar Gradient */
+.xpGradientFill {
+    background: linear-gradient(90deg, #eab308 0%, #facc15 100%) !important;
+    box-shadow: 0 0 12px rgba(242, 204, 21, 0.4);
+}
+
+/* Enhanced Metrics Cards */
+.metricsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.metricCard {
+    background: linear-gradient(180deg, #121214 0%, #0e0e10 100%) !important;
+    border: 1px solid #1c1c1f !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.metricCard:hover {
+    transform: translateY(-2px);
+    border-color: #27272a !important;
+}
+
+/* Specific Accent Accents for Vitals */
+.vitalStreak {
+    border-left: 3px solid #ef4444 !important; /* Crimson border indicator */
+}
+
+.vitalCompletion {
+    border-left: 3px solid #10b981 !important; /* Emerald green indicator */
+}
+
+.metricLabel {
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    color: #71717a !important;
+}
+
+.metricValue {
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.5px;
+    margin: 8px 0 4px 0 !important;
+}
+
+/* Clean Clean Headers */
+.sectionHeaderTitle {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    color: #a1a1aa !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 16px 0 !important;
+    border-bottom: 1px solid #1c1c1f;
+    padding-bottom: 8px;
+}
+
+/* Gorgeous Clean Progress Rows on Dashboard */
+.progressBarBlock {
+    margin-bottom: 16px;
+}
+
+.progressMetaRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Premium Action Footer Button */
+.actionFooter {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.startButton {
+    background: linear-gradient(135deg, #ffffff 0%, #e4e4e7 100%) !important;
+    color: #09090b !important;
+    border: none !important;
+    width: 100% !important;
+    padding: 18px !important;
+    border-radius: 16px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05) !important;
+    transition: all 0.2s ease !important;
+}
+
+.startButton:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1) !important;
+}
+
+.headerTopMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #71717a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.statusTag {
+    background: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.quoteBlock {
+    margin-top: 16px;
+}
+
+.quoteBlock p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #e4e4e7;
+    margin: 0;
+    font-style: italic;
+}
+
+
+/* METRICS GRID */
+.metricsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.metricCard {
+    background: #121214;
+    border: 1px solid #232326;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.metricLabel {
+    font-size: 10px;
+    font-weight: 700;
+    color: #a1a1aa;
+    letter-spacing: 0.5px;
+}
+
+.metricValue {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 6px 0 2px 0;
+    color: #fff;
+}
+
+.metricSubtext {
+    font-size: 11px;
+    color: #71717a;
+}
+
+/* SYSTEM HEADERS */
+.sectionHeaderTitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #71717a;
+    letter-spacing: 1px;
+    margin: 24px 0 12px 4px;
+    text-transform: uppercase;
+}
+
+/* PROGRESS BOARD MECHANICS */
+.progressSection {
+    background: #121214;
+    border: 1px solid #232326;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.progressRow {
+    margin-bottom: 14px;
+}
+.progressRow:last-child {
+    margin-bottom: 0;
+}
+
+.progressInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.miniBadge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+}
+
+.progressPercentText {
+    font-size: 11px;
+    font-weight: 600;
+    color: #a1a1aa;
+}
+
+.progressBarTrack {
+    background: #1c1c1e;
+    height: 6px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.progressBarFill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* DYNAMIC ACCENT COLORS */
+.bodyColor { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); }
+.mindColor { background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.2); }
+.skillColor { background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.2); }
+.envColor { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.2); }
+.appColor { background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.2); }
+.discColor { background: rgba(251, 146, 60, 0.15); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.2); }
+
+/* Fills matching the badges */
+div.progressBarFill.bodyColor { background: #10b981; }
+div.progressBarFill.mindColor { background: #3b82f6; }
+div.progressBarFill.skillColor { background: #eab308; }
+div.progressBarFill.envColor { background: #38bdf8; }
+div.progressBarFill.appColor { background: #c084fc; }
+div.progressBarFill.discColor { background: #fb923c; }
+
+/* ROUTINE INTERACTIVE CARDS */
+.card {
+    background: #18181b;
+    border: 1px solid #27272a;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e4e7;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:active {
+    transform: scale(0.98);
+    background: #27272a;
+}
+
+.card.completed {
+    background: rgba(16, 185, 129, 0.08) !important;
+    border-color: rgba(16, 185, 129, 0.3) !important;
+    color: #a1a1aa !important;
+    text-decoration: line-through;
+}
+
+.category {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 24px 0 8px 4px;
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* TODAY MODE HOME LIST */
+/* Make the streak badge feel dangerous and high stakes */
+#streakCountDisplay {
+    color: #ef4444 !important; /* Blood Red */
+    text-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+/* Transform checked tasks into ghost elements */
+.trackerTaskRow.checked, .card.done {
+    opacity: 0.35;
+    background: rgba(16, 185, 129, 0.03) !important;
+    border-color: rgba(16, 185, 129, 0.1) !important;
+    pointer-events: none; /* Can't easily undo your commitment */
+    transition: all 0.4s ease;
+}
+#todayTasksContainer {
+    background: #121214;
+    border: 1px solid #232326;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.todaySectionHeader {
+    font-size: 10px;
+    font-weight: 800;
+    color: #52525b;
+    margin: 14px 0 6px 0;
+    letter-spacing: 0.5px;
+}
+
+.todayTaskRow {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1c1c1f;
+    cursor: pointer;
+}
+.todayTaskRow:last-child {
+    border-bottom: none;
+}
+
+.checkboxStatus {
+    font-size: 14px;
+    color: #52525b;
+    margin-right: 12px;
+    font-family: monospace;
+}
+
+.todayTaskName {
+    font-size: 14px;
+    color: #d4d4d8;
+}
+
+.todayTaskRow.checked .checkboxStatus {
+    color: #10b981;
+    font-weight: bold;
+}
+.todayTaskRow.checked .todayTaskName {
+    color: #71717a;
+    text-decoration: line-through;
+}
+/* ==========================================
+   PREMIUM TODAY TASK ROW LAYOUT
+   ========================================== */
+.trackerTasksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Adds space between individual tasks */
+    margin-top: 10px;
+}
+
+.trackerTaskRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #161619 0%, #111113 100%);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trackerTaskRow:hover {
+    background: #1c1c21;
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: translateX(2px);
+}
+
+.trackerTaskLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.statusIcon {
+    font-size: 14px;
+    color: #52525b;
+    transition: color 0.3s ease;
+}
+
+.taskLabelName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e4e4e7;
+    transition: all 0.3s ease;
+}
+
+/* Micro badges indicating the category type on each card */
+.taskMiniBadge {
+    font-size: 9px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+    padding: 2px 8px !important;
+    border-radius: 6px !important;
+    text-transform: uppercase;
+}
+
+/* Completed Task State Transformation */
+.trackerTaskRow.checked {
+    background: rgba(16, 185, 129, 0.02) !important;
+    border-color: rgba(16, 185, 129, 0.1) !important;
+    opacity: 0.4;
+}
+
+.trackerTaskRow.checked .statusIcon {
+    color: #10b981;
+    text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+.trackerTaskRow.checked .taskLabelName {
+    color: #71717a;
+    text-decoration: line-through;
+}
+
+.trackerTaskRow.checked .taskMiniBadge {
+    background: rgba(39, 39, 42, 0.5) !important;
+    color: #52525b !important;
+    border-color: transparent !important;
+}
+
+/* NAVIGATION NAVIGATION BUTTONS */
+.navButton {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* PROTOCOL VIEW PAGE */
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.backBtn {
+    position: absolute;
+    left: 0;
+    color: #a1a1aa;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.taskImage {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.protocolBox {
+    background: #121214;
+    border: 1px solid #232326;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d4d4d8;
+    margin-bottom: 24px;
+}
+
+.actionBtn {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
