@@ -942,15 +942,18 @@ function openTask(taskName) {
 
     if (btnEl) {
         if (doneTasks[taskName]) {
-            btnEl.innerText = "Marked as Done ✔️";
-            btnEl.style.background = "linear-gradient(135deg, #059669 0%, #10b981 100%)";
+            btnEl.innerText = "⚡ PROTOCOL AUTHORIZED & LOCKED";
+    btnEl.style.background = "linear-gradient(135deg, #065f46 0%, #10b981 100%)";
+    btnEl.style.boxShadow = "0 0 20px rgba(16, 185, 129, 0.4)";
+
         } else {
-            btnEl.innerText = "Mark as Done";
-            btnEl.style.background = "linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)";
+          btnEl.innerHTML = "🔥 EXECUTE COMMITMENT";
+    btnEl.style.background = "linear-gradient(135deg, #dc2626 0%, #991b1b 100%)";
+    btnEl.style.boxShadow = "0 0 20px rgba(220, 38, 38, 0.2)";
         }
-    }
+    
     showPage("taskPage");
-}
+}}
 
 function toggleDone() {
     if (!currentTask) return;
