@@ -597,16 +597,61 @@ A simple, disciplined plan that makes tomorrow automatic.`,
 Look clean, sharp, and disciplined. No pimples, no dark marks, no strawberry legs.
 
 🌟 FACE CARE (Bright, Clear, Even Skin)
-Daily – Night (Aloe Vera Treatment)
-• Wash face with a gentle cleanser.
-• Apply a thin layer of pure aloe vera gel.
-• Leave overnight, rinse in the morning.
 
-2–3× / Week – AHA/BHA Exfoliation (Night Only)
-• Wash and dry face completely.
-• Apply a thin layer of AHA or BHA serum.
-• Wait 1 minute.
-• Apply moisturiser.
+🌅 MORNING ROUTINE
+Facewash
+
+Use your Garnier Pure Active BHA + Charcoal  
+(Good for oil + clogged pores)
+
+Niacinamide Serum  
+Choose ONE (budget):
+
+The Ordinary Niacinamide 10%
+
+Revolution Niacinamide 10%
+
+Good Molecules Niacinamide
+(Reduces pimples + fades marks)
+
+Moisturiser  
+Choose ONE:
+
+Nivea Soft
+
+Garnier Hydra Bomb Gel Cream
+
+CeraVe Moisturising Lotion (small size)
+(Prevents dryness → reduces acne)
+
+Sunscreen  
+Choose ONE:
+
+Garnier Ambre Solaire Anti‑Shine SPF 50
+
+Nivea Shine Control SPF 50
+
+Equilibra Aloe SPF 30
+(Prevents marks from getting darker)
+
+🌙 NIGHT ROUTINE
+Facewash
+
+Same Garnier Pure Active
+
+Aloe Vera Gel  
+Choose ONE:
+
+Equilibra Aloe Vera Gel
+
+Aroma Treasures Aloe Gel
+
+Dr. Organic Aloe Gel
+(Calms skin + heals marks)
+
+Moisturiser
+
+Same as morning
 
 1–2× / Week – Yogurt + Turmeric Mask
 • Mix 2 tsp yogurt + a pinch of turmeric.
